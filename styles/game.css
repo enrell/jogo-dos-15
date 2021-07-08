@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+  background-color: #270140;
+  box-sizing: border-box;
+  font: normal 30px Arial, Helvetica, sans-serif;
+}
+.container {
+  display: grid;
+}
