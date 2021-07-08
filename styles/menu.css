@@ -1,55 +1,43 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 body {
-  /* Resetando o tamanho das box do navegador */
+  background-color: #170126;
   box-sizing: 0;
   box-sizing: border-box;
-/* Adicionando a margem e o padding "Margem só que quando almentada se expande para dentro da box." */
   margin: 1%;
   padding: 1%;
-/* Adicionando uma fonte com ordem: font = font-style => font-weight => font-size => font-family deve seguir essa ordem, se não quiser colocar um dos itens pode, porém seguindo a ordem*/
   font: normal bolder 30px Arial, Helvetica, sans-serif;
-/* Adicionando uma cor de fundo*/
-  background-color: #170126;
 }
-/* Criando um container "box", que contem nossa interface*/
 .container {
-  /* Declarando as configurações do Grid*/
+  text-align: center;
   display: grid;
+  width: 100%;
+  right: 100%;
+  background-color: #270140;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px; 
   grid-template-areas: 
     "titulo titulo titulo"
     "none-01 button-1 none-02"
     "none-03 button-2 mdagua";
-  /* Definindo o tamanho do container, 100% significa porcentagem da área branca do browser(navegador)*/
-  width: 100%;
-  right: 100%;
-  gap: 0px 0px; 
-/* Definindo a fonte do texto que ficará dentro do container, as que ficarem fora não são afetadas*/
-  text-align: center;
     font: normal bolder 30px Arial, Helvetica, sans-serif;
-/* Definindo a cor de fundo do container*/
-  background-color: #270140;
 
 }
-
 .titulo {
-  /* O título estará em uma box dentro da box(container)*/
   grid-area: titulo;
-/* 4"em" é o tipo de valor que irá assumir por exemplo: 4%*/
+  color: #44D2F2;
+  background-color: #170126;
   font: normal bolder 4em Arial;
   text-align: center;
   margin: 3vh;
-/* Definindo a cor do texto e o fundo da box*/
-  color: #44D2F2;
-  background-color: #170126;  
 }
-/* Criando um botão*/
 .button-1 {
   font: normal bolder 30px Arial, Helvetica, sans-serif;
   grid-area: button-1;
+  background-color: #270140;
   border: none;
+  color: #44D2F2;
   padding: 0;
   width: 100%;
   right: 100%;
@@ -60,10 +48,7 @@ body {
   transition: all 1s;
   transition-duration: 0.4s;
   outline: none;
-
   box-shadow: 0 10px #170126;
-  background-color: #270140;
-  color: #44D2F2;
 }
 .button-1 span {
   cursor: pointer;
