@@ -1,11 +1,13 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-body {
+body {/* Resetando o box-sizing*/
   background-color: #170126;
   box-sizing: 0;
   box-sizing: border-box;
+
   margin: 1%;
   padding: 1%;
+/* font order: font-style => font-weight => font-size => font-family */
   font: normal bolder 30px Arial, Helvetica, sans-serif;
 }
 .container {
@@ -20,9 +22,9 @@ body {
   grid-template-areas: 
     "titulo titulo titulo"
     "none-01 button-1 none-02"
-    "none-03 button-2 mdagua";
+    "none-03 button-2 none-04";
     font: normal bolder 30px Arial, Helvetica, sans-serif;
-
+    
 }
 .titulo {
   grid-area: titulo;
@@ -50,6 +52,7 @@ body {
   outline: none;
   box-shadow: 0 10px #170126;
 }
+/* Define, quando meu cursor estiver acima do botão ele vai ativar a animação */
 .button-1 span {
   cursor: pointer;
   display: inline-block;
@@ -77,10 +80,10 @@ body {
 .button-1:active {
   background-color: #10001b;
   box-shadow: 0 5px #10001b;
-  transform: translateY(4px);
+  transform: translateY(5px);
 }
 
-.button-2 {/* font order: font-style => font-weight => font-size => font-family */
+.button-2 {
   font: normal bolder 30px Arial, Helvetica, sans-serif;
   grid-area: button-2;
   background-color: #270140;
