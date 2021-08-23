@@ -115,7 +115,7 @@
 		
 		}
 		
-		/*----Blocos do jogo----*/
+		/*----Animacao dos blocos----*/
 		
 		.gamearea .item.item-1{
 			transform: translate(0px, 0px);
@@ -475,7 +475,7 @@ function hard(){
 	
 </script>
 <svelte:head>
-	<link rel="shortcut icon" href="../public/favicon.ico" type="image/vnd.microsoft.icon">
+	<link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
 	<title>GAME</title>
 </svelte:head>
 <div class="container">
