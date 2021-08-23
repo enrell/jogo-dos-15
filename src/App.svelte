@@ -16,6 +16,7 @@
 		:global(body) {
 			margin: 0;
 			padding: 0;
+
 			background-color: #170126;
 		}
 		.back {
@@ -38,40 +39,11 @@
 			transition-duration: 0.4s;
 			
 			background-color: #270140;
-			color: #44D2F2;
 			box-shadow: 0 10px #170126;
+			color: #44D2F2;
+			
 		}
-		/* Define, quando meu cursor estiver acima do botao ele vai ativar a animacao */
-		.back span {
-			cursor: pointer;
-			display: inline-block;
-			position: relative;
-			transition: 0.6s;
-		}
-		.back span:after {
-			content: "<<";
-			position: absolute;
-			opacity: 0;
-			top: 0;
-			right: -50px;
-			transition: 0.6s;
-		}
-		.back:hover span {
-			padding-right: 50px;
-		}
-		.back:hover span:after {
-			opacity: 1;
-			right: 0;
-		}
-		.back:hover {
-			background-color: #10001b;
-		}
-		.back:active {
-			background-color: #10001b;
-			box-shadow: 0 5px #10001b;
-			transform: translateY(5px);
-		}
-		
+
 		/*----Container da pagina----*/
 		
 		.game {
@@ -95,20 +67,22 @@
 		
 		.header {
 			grid-area: titulo;
-			color: #44D2F2;
-			background-color: #170126;
-			font: normal bolder 4em Arial;
 			text-align: center;
 			margin: 0%;
+
+			font: normal bolder 4em Arial;
+
+			color: #44D2F2;
+			background-color: #170126;
 		}
 		/*----area dos blocos----*/
 		.gamearea {
 			position: relative;
 			margin: 0 auto;
 			padding: 2px;
-			
 			width: 400px;
 			height: 400px;
+			
 			background: #170126;
 			box-shadow: 0 0 4px 4px #44D2F2;
 			
@@ -188,14 +162,16 @@
 		}
 		
 		.gamearea .item-label {
-			background: #7107b8;
-				font-size: 35px;
-				font-weight: 300;
 				height: 25%;
-				box-shadow: inset 0 0 0 3px #170126;
-				line-height: 2;
 				padding: 16px;
 				margin: 0px;
+				line-height: 2;
+
+				font-size: 35px;
+				font-weight: 300;
+
+				background: #7107b8;
+				box-shadow: inset 0 0 0 3px #170126;
 		
 		}
 		*, :after, :before {
@@ -210,6 +186,7 @@
 			height: 100%;
 			margin: 2vh;
 			left: 1%;
+
 			color: #44D2F2;
 			background-color: #270140;
 		}
