@@ -466,6 +466,12 @@ function reset(){
 function easy(){
 	array = [1, 2, 4, 8, 9, 5, 3, 12, 13, 6, 7, 15, 10, 14, 11, 16]
 }
+function normal(){
+	array = [9, 10, 3, 2, 1, 6, 7, 8, 4, 11, 5, 12, 13, 14, 15]
+}
+function hard(){
+	array = [11, 10, 15, 12, 13, 3, 8, 4, 9, 5, 1, 2, 14, 7, 6]
+}
 	
 </script>
 <svelte:head>
@@ -499,10 +505,10 @@ function easy(){
 						<h2>Select difficulty</h2>
 						<button class="button" on:click="{reset}"><span>Reset</span></button>
 						<button class="button" on:click="{easy}"><span>Easy</span></button>
-						<button class="button"><span>Normal</span></button>
-						<button class="button"><span>Hard</span></button>
+						<button class="button" on:click="{normal}"><span>Normal</span></button>
+						<button class="button" on:click="{hard}"><span>Hard</span></button>
 						</div>
-					<div class="footer"> <button class="back" onclick="window.location.href='./App.svelte'"><span>Back</span></button> </div>
+					<div class="footer"></div>
 					<div class="header">GAME OF FIFTEEN</div>
 					<div class="time"></div>
 				</div>
