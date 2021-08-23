@@ -82,7 +82,7 @@
 			padding: 2px;
 			width: 400px;
 			height: 400px;
-			
+
 			background: #170126;
 			box-shadow: 0 0 4px 4px #44D2F2;
 			
@@ -230,12 +230,36 @@
 			box-shadow: 0 5px #10001b;
 			transform: translateY(5px);
 		}
+		.button-sobre {
+			display: inline-block;
+			grid-area: footer;
+			position: fixed;
+			width: 15%;
+			margin: 0.5vh;
+			left: 80%;
+			top: 90%;
+			padding: 0%;
+			border: none;
+			outline: none;
+		
+			text-decoration: none;
+			font: normal bolder 40px Arial, Helvetica, sans-serif;
+			cursor: pointer;
+		
+			transition: all 1s;
+			transition-duration: 0.4s;
+			
+			background-color: #270140;
+			color: #44D2F2;
+			box-shadow: 0 10px #170126;
+		}
 		
 		.footer { 
 			grid-area: footer;
 			width: 100%;
 			
 		}
+	
 		
 		.header { 
 			grid-area: header;
@@ -248,6 +272,7 @@
 			width: 100%;
 			height: 100%;
 		}
+
 </style>
 	
 <script>
@@ -485,7 +510,9 @@ function hard(){
 						<button class="button" on:click="{normal}"><span>Normal</span></button>
 						<button class="button" on:click="{hard}"><span>Hard</span></button>
 						</div>
-					<div class="footer"></div>
+					<div class="footer">
+						<button class="button-sobre" onclick="window.location.href='Sobre.svelte'"><span>Sobre</span></button>
+					</div>
 					<div class="header">GAME OF FIFTEEN</div>
 					<div class="time"></div>
 				</div>
