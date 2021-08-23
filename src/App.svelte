@@ -4,6 +4,8 @@
 			.container {
 			box-sizing: border-box;
 			box-sizing: 0;
+			width: 100%;
+			height: 100%;
 			margin: 0%;
 			padding: 0%;
 			
@@ -11,7 +13,11 @@
 		
 			background-color: #170126;
 		}
-		
+		:global(body) {
+			margin: 0;
+			padding: 0;
+			background-color: #170126;
+		}
 		.back {
 			display: inline-block;
 			grid-area: footer;
@@ -35,7 +41,7 @@
 			color: #44D2F2;
 			box-shadow: 0 10px #170126;
 		}
-		/* Define, quando meu cursor estiver acima do botão ele vai ativar a animação */
+		/* Define, quando meu cursor estiver acima do botao ele vai ativar a animacao */
 		.back span {
 			cursor: pointer;
 			display: inline-block;
@@ -66,7 +72,7 @@
 			transform: translateY(5px);
 		}
 		
-		/*----Container da página----*/
+		/*----Container da pagina----*/
 		
 		.game {
 			display: grid;
@@ -75,6 +81,8 @@
 			grid-auto-columns: 1fr;
 			grid-auto-rows: 1fr;
 			gap: 0px 0px;
+			width: 100%;
+			height: 100%;
 			grid-auto-flow: row;
 			align-items: stretch;
 			grid-template-areas:
@@ -93,7 +101,7 @@
 			text-align: center;
 			margin: 0%;
 		}
-		/*----Área dos blocos----*/
+		/*----area dos blocos----*/
 		.gamearea {
 			position: relative;
 			margin: 0 auto;
@@ -195,7 +203,7 @@
 		}
 		
 		
-		.difficulty {
+		.difficulty{
 			grid-area: difficulty;
 			position: relative;
 			width: 100%;
@@ -205,14 +213,17 @@
 			color: #44D2F2;
 			background-color: #270140;
 		}
+		.difficulty, h2 {
+			text-align: center;
+		}
 		
 		.button {
 			position: relative;
 			text-align: center;
+			align-items: center;
 			top: -20px;
-			left: 11vh;
 			width: 50%;
-			height: 15%;
+			height: 12%;
 			margin: 2vh;
 			border: none;
 			
@@ -486,7 +497,7 @@ function easy(){
 		
 					<div class="difficulty">
 						<h2>Select difficulty</h2>
-						<buton class="button" on:click="{reset}"><span>Reset</span></buton>
+						<button class="button" on:click="{reset}"><span>Reset</span></button>
 						<button class="button" on:click="{easy}"><span>Easy</span></button>
 						<button class="button"><span>Normal</span></button>
 						<button class="button"><span>Hard</span></button>
