@@ -1,30 +1,15 @@
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-body {/* Resetando o box-sizing*/
-  background-color: #170126;
-  box-sizing: 0;
-  box-sizing: border-box;
-
-  margin: 1%;
-  padding: 1%;
-/* font order: font-style => font-weight => font-size => font-family */
-  font: normal bolder 30px Arial, Helvetica, sans-serif;
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
-.container {
-  text-align: center;
-  display: grid;
-  width: 100%;
-  right: 100%;
-  background-color: #270140;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "titulo titulo titulo"
-    "none-01 button-1 none-02"
-    "none-03 button-2 none-04";
-    font: normal bolder 30px Arial, Helvetica, sans-serif;
-    
+
+body {
+background-color: #270140;
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 .titulo {
   grid-area: titulo;
@@ -148,7 +133,9 @@ body {/* Resetando o box-sizing*/
 /* CSS da página sobre*/
 
 #sobreBody {
-  color: white;
+  color: #44D2F2;
+	font: normal bolder 35px Arial, Helvetica, sans-serif;
+
 }
 #buttonBack {
   width: 15%;
